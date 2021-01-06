@@ -1,0 +1,41 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="EasyJobsTestingSuite">
+	
+	
+	<test name="EmployeeLoginTest">
+	<classes>
+			<class name="Wp.EasyJobsProject.Test.EmpLogin"/>
+		</classes>
+	</test>
+	<test name="CreateJobTest">
+	<classes>
+			<class name="Wp.EasyJobsProject.Test.CreateJobs"/>
+		</classes>
+	</test>
+	
+	<test name="CandidateDetails">
+	<classes>
+			<class name="Wp.EasyJobsProject.Test.CandidateDetails"/>
+		</classes>
+	</test>
+	
+	
+	
+	<test name="companySetting">
+	<classes>
+			<class name="Wp.EasyJobsProject.Test.Settings"/>
+		</classes>
+	</test>
+	
+	
+	<test name="Evaluation">
+	<classes>
+			<class name="Wp.EasyJobsProject.Test.Evaluation"/>
+		</classes>
+	</test>
+	
+	
+	
+
+</suite>

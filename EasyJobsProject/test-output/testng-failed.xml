@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [EasyJobsTestingSuite]">
+  <test thread-count="5" name="CreateJobTest(failed)">
+    <classes>
+      <class name="Wp.EasyJobsProject.Test.CreateJobs">
+        <methods>
+          <include name="createjob" invocation-numbers="0"/>
+          <include name="createjobpageTitle"/>
+        </methods>
+      </class> <!-- Wp.EasyJobsProject.Test.CreateJobs -->
+    </classes>
+  </test> <!-- CreateJobTest(failed) -->
+  <test thread-count="5" name="CandidateDetails(failed)">
+    <classes>
+      <class name="Wp.EasyJobsProject.Test.CandidateDetails">
+        <methods>
+          <include name="AssignAssessment"/>
+          <include name="details"/>
+          <include name="CheckCandidatepageTitle"/>
+          <include name="CheckCandidateStatus"/>
+          <include name="ViewCandidateDetails"/>
+        </methods>
+      </class> <!-- Wp.EasyJobsProject.Test.CandidateDetails -->
+    </classes>
+  </test> <!-- CandidateDetails(failed) -->
+</suite> <!-- Failed suite [EasyJobsTestingSuite] -->

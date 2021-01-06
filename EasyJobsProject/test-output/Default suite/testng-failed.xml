@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="Wp.EasyJobsProject.Test.Settings">
+        <methods>
+          <include name="setting"/>
+          <include name="appkey"/>
+          <include name="manageuser"/>
+          <include name="pipelinesetup"/>
+          <include name="companySettings"/>
+        </methods>
+      </class> <!-- Wp.EasyJobsProject.Test.Settings -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
