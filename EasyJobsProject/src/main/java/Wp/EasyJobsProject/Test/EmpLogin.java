@@ -2,11 +2,12 @@ package Wp.EasyJobsProject.Test;
 
 import org.testng.annotations.Test;
 
-import org.testng.AssertJUnit;
-import java.util.List;
 
+
+import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import Wp.EasyJobsProject.DTO.EmpLoginDTO;
 import Wp.EasyJobsProject.DataProvider.EmpLoginDataProvider;
@@ -26,7 +27,7 @@ public class EmpLogin {
 		driver = DriverManager.driver;
 		driver.get(UrlTextUtils.URL.Base_URL);
 		Thread.sleep(9000);
-		AssertJUnit.assertEquals(driver.getTitle(), UrlTextUtils.TEXT.LoginPageTitle);
+		Assert.assertEquals(driver.getTitle(), UrlTextUtils.TEXT.LoginPageTitle);
 	}
 	
 	@Test(dependsOnMethods = "checkLoginPageTitle", dataProvider = "emplogdata", dataProviderClass = EmpLoginDataProvider.class )
@@ -38,7 +39,7 @@ public class EmpLogin {
 		Thread.sleep(3000);
 		driver.findElement(By.xpath(XpathUtils.EmpLoginModule.signIN_BTN)).click();	
 		Thread.sleep(3000);
-		AssertJUnit.assertEquals(driver.getTitle(), UrlTextUtils.TEXT.HomePageTitle);
+		Assert.assertEquals(driver.getTitle(), UrlTextUtils.TEXT.HomePageTitle);
 		Thread.sleep(3000);
 	}
 	
